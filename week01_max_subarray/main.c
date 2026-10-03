@@ -8,6 +8,10 @@ int main(){
     scanf("%d",&count);
     int *arr = create_int_array(count);
 
+    for(int i=0;i<count;i++){
+        scanf("%d",&arr[i]);
+    }
+
     long long out_sum;
     max_subarray(arr, count, &out_sum);
     printf("%lld\n", out_sum);

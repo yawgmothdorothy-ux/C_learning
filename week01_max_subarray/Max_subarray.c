@@ -1,8 +1,9 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include "memory.h"
+#include "Max_subarray.h"
 
-int maxdp(int a ,int b){
+static int maxdp(int a ,int b){
     if(a>b){
         return a;
     }
@@ -11,25 +12,25 @@ int maxdp(int a ,int b){
     }
 
 }
-int main(){
-    int count;
-    scanf("%d",&count);
-    int *arr = create_int_array(count);
+int max_subarray(const int *arr, int n, long long *out_sum){
 
+    if (arr == NULL || out_sum == NULL || n <= 0) {
+        return 0;  // 失败
+    }
+
+    int count = n;
     int *dp = create_int_array(count);
 
-    if(arr == NULL){
+    if(dp == NULL){
         printf("Error");
-        return 1;
-    }
-    for(int i=0;i<count;i++){
-        scanf("%d",&arr[i]);
+        return 0;
     }
     int themax = dp[0] = arr[0];
     for(int i=1;i<count;i++){
         dp[i] = maxdp(arr[i],dp[i-1]+arr[i]);
         themax = maxdp(themax,dp[i]);
     }
-    printf("%d\n",themax);
-    return 0;
+    *out_sum = themax;
+    free(dp);
+    return 1;
 }
