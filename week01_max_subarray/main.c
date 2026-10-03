@@ -5,8 +5,6 @@
 
 int main(){
     int count;
-    scanf("%d",&count);
-
     if (scanf("%d", &count) != 1 ||
         count < 1 || count > 10000) {
         printf("数量输入错误\n");
