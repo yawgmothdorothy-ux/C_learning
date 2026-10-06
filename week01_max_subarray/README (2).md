@@ -115,3 +115,7 @@ git push origin main
 `git add` 把本地修改放入暂存区，`git diff --cached` 查看将要提交的内容，`git commit` 在本地记录修改，`git push` 上传到 GitHub。若推送提示远端有本地尚未包含的提交，先执行 `git pull --rebase origin main`，再重新推送。
 
 不要把编译生成的 `program` 或其他可执行文件加入提交；它们可以通过 `.gitignore` 排除。
+
+## 学习项目
+
+- [最大连续子数组和](week01_max_subarray/README.md)：练习动态数组、DP 和多文件编程。

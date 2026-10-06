@@ -3,5 +3,28 @@
     // 悬停以查看现有属性的描述。
     // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": []
+    "configurations": [
+        {
+            "name": "调试学生成绩",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/student_Score/program",
+            "args": [],
+            "cwd": "${workspaceFolder}/student_Score",
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "preLaunchTask": "编译学生成绩"
+        },
+        {
+            "name": "调试最大子数组",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/week01_max_subarray/program",
+            "args": [],
+            "cwd": "${workspaceFolder}/week01_max_subarray",
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "preLaunchTask": "编译最大子数组"
+        }
+    ]
 }
