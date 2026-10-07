@@ -5,6 +5,29 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "运行当前 C 文件",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "cwd": "${fileDirname}",
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "preLaunchTask": "编译当前 C 文件"
+        },
+
+        {
+            "name": "调试特殊数字（rate.c）",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/Alice_and_bob/program",
+            "args": [],
+            "cwd": "${workspaceFolder}/Alice_and_bob",
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "preLaunchTask": "编译特殊数字"
+        },
+        {
             "name": "调试学生成绩",
             "type": "cppdbg",
             "request": "launch",

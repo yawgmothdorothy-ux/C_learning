@@ -1,0 +1,9 @@
+{
+    "terminal.integrated.shellIntegration.enabled": false,
+    "terminal.integrated.gpuAcceleration": "off",
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.executorMap": {
+        "c": "cd \"$dir\" && gcc -std=c11 -Wall -Wextra -g \"$fileName\" -o \"$fileNameWithoutExt\" -lm && \"$dir$fileNameWithoutExt\""
+    }
+}
