@@ -11,12 +11,12 @@
 | [P1177.c](P1177.c) | 带学习注释的实现 |
 | [P1177_submit.c](P1177_submit.c) | 无注释的提交版本 |
 | [p1177_gpt_ver.c](p1177_gpt_ver.c) | 之前保留的参考版本 |
-| [docs/merge-sort-guide.png](docs/merge-sort-guide.png) | 左侧数组流程、右侧程序运行逻辑的示例图 |
-| [docs/draw_merge_sort.py](docs/draw_merge_sort.py) | 绘图源文件，可使用 Pillow 重新生成图片 |
+| [docs/merge-sort-guide.png](Figures_图解资料/merge-sort-guide.png) | 左侧数组流程、右侧程序运行逻辑的示例图 |
+| [docs/draw_merge_sort.py](Figures_图解资料/draw_merge_sort.py) | 绘图源文件，可使用 Pillow 重新生成图片 |
 
 ## 示例图：8 个元素怎样排好序
 
-![8 个元素的归并排序流程，以及右侧的程序运行逻辑图](docs/merge-sort-guide.png)
+![8 个元素的归并排序流程，以及右侧的程序运行逻辑图](Figures_图解资料/merge-sort-guide.png)
 
 可以点击图片打开原图，放大查看注释。蓝色表示拆分，橙色表示单元素的递归终点，绿色表示合并后的有序区间。
 

@@ -18,7 +18,9 @@
             "options": {
                 "cwd": "${fileDirname}"
             },
-            "problemMatcher": ["$gcc"],
+            "problemMatcher": [
+                "$gcc"
+            ],
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -34,15 +36,17 @@
                 "-Wall",
                 "-Wextra",
                 "-g",
-                "${workspaceFolder}/Alice_and_bob/rate.c",
+                "${workspaceFolder}/Basics_基础练习/SpecialNumbers_特殊数字/rate.c",
                 "-lm",
                 "-o",
-                "${workspaceFolder}/Alice_and_bob/program"
+                "${workspaceFolder}/Basics_基础练习/SpecialNumbers_特殊数字/program"
             ],
             "options": {
-                "cwd": "${workspaceFolder}/Alice_and_bob"
+                "cwd": "${workspaceFolder}/Basics_基础练习/SpecialNumbers_特殊数字"
             },
-            "problemMatcher": ["$gcc"],
+            "problemMatcher": [
+                "$gcc"
+            ],
             "group": {
                 "kind": "build",
                 "isDefault": false
@@ -57,16 +61,18 @@
                 "-Wall",
                 "-Wextra",
                 "-g",
-                "${workspaceFolder}/week01_max_subarray/main.c",
-                "${workspaceFolder}/week01_max_subarray/memory.c",
-                "${workspaceFolder}/week01_max_subarray/Max_subarray.c",
+                "${workspaceFolder}/DynamicProgramming_动态规划/MaxSubarray_最大子段和/MultiFile_多文件实现/main.c",
+                "${workspaceFolder}/DynamicProgramming_动态规划/MaxSubarray_最大子段和/MultiFile_多文件实现/memory.c",
+                "${workspaceFolder}/DynamicProgramming_动态规划/MaxSubarray_最大子段和/MultiFile_多文件实现/Max_subarray.c",
                 "-o",
-                "${workspaceFolder}/week01_max_subarray/program"
+                "${workspaceFolder}/DynamicProgramming_动态规划/MaxSubarray_最大子段和/MultiFile_多文件实现/program"
             ],
             "options": {
-                "cwd": "${workspaceFolder}/week01_max_subarray"
+                "cwd": "${workspaceFolder}/DynamicProgramming_动态规划/MaxSubarray_最大子段和/MultiFile_多文件实现"
             },
-            "problemMatcher": ["$gcc"],
+            "problemMatcher": [
+                "$gcc"
+            ],
             "group": {
                 "kind": "build",
                 "isDefault": false
@@ -81,19 +87,47 @@
                 "-Wall",
                 "-Wextra",
                 "-g",
-                "${workspaceFolder}/student_Score/main.c",
+                "${workspaceFolder}/StudentScores_学生成绩/SingleFile_单文件统计/main.c",
                 "-o",
-                "${workspaceFolder}/student_Score/program"
+                "${workspaceFolder}/StudentScores_学生成绩/SingleFile_单文件统计/program"
             ],
             "options": {
-                "cwd": "${workspaceFolder}/student_Score"
+                "cwd": "${workspaceFolder}/StudentScores_学生成绩/SingleFile_单文件统计"
             },
-            "problemMatcher": ["$gcc"],
+            "problemMatcher": [
+                "$gcc"
+            ],
             "group": {
                 "kind": "build",
                 "isDefault": false
             },
             "detail": "编译学生成绩项目。"
+        },
+        {
+            "type": "cppbuild",
+            "label": "编译班级成绩分析",
+            "command": "/usr/bin/gcc",
+            "args": [
+                "-std=c11",
+                "-Wall",
+                "-Wextra",
+                "-g",
+                "${workspaceFolder}/StudentScores_学生成绩/ClassAnalysis_班级成绩分析/class_score.c",
+                "${workspaceFolder}/StudentScores_学生成绩/ClassAnalysis_班级成绩分析/student_score.c",
+                "-o",
+                "${workspaceFolder}/StudentScores_学生成绩/ClassAnalysis_班级成绩分析/program"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/StudentScores_学生成绩/ClassAnalysis_班级成绩分析"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "detail": "编译班级成绩分析的两个源文件。"
         }
     ]
 }

@@ -1,9 +1,20 @@
-{
-    // 使用 IntelliSense 了解相关属性。 
-    // 悬停以查看现有属性的描述。
-    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
+        {
+            // 使用 IntelliSense 了解相关属性。 
+            // 悬停以查看现有属性的描述。
+            // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+            "version": "0.2.0",
+            "configurations": [
+        {
+            "name": "调试班级成绩分析",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/StudentScores_学生成绩/ClassAnalysis_班级成绩分析/program",
+            "args": [],
+            "cwd": "${workspaceFolder}/StudentScores_学生成绩/ClassAnalysis_班级成绩分析",
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "preLaunchTask": "编译班级成绩分析"
+        },
         {
             "name": "运行当前 C 文件",
             "type": "cppdbg",
@@ -20,9 +31,9 @@
             "name": "调试特殊数字（rate.c）",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/Alice_and_bob/program",
+            "program": "${workspaceFolder}/Basics_基础练习/SpecialNumbers_特殊数字/program",
             "args": [],
-            "cwd": "${workspaceFolder}/Alice_and_bob",
+            "cwd": "${workspaceFolder}/Basics_基础练习/SpecialNumbers_特殊数字",
             "externalConsole": false,
             "MIMode": "gdb",
             "preLaunchTask": "编译特殊数字"
@@ -31,9 +42,9 @@
             "name": "调试学生成绩",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/student_Score/program",
+            "program": "${workspaceFolder}/StudentScores_学生成绩/SingleFile_单文件统计/program",
             "args": [],
-            "cwd": "${workspaceFolder}/student_Score",
+            "cwd": "${workspaceFolder}/StudentScores_学生成绩/SingleFile_单文件统计",
             "externalConsole": false,
             "MIMode": "gdb",
             "preLaunchTask": "编译学生成绩"
@@ -42,9 +53,9 @@
             "name": "调试最大子数组",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/week01_max_subarray/program",
+            "program": "${workspaceFolder}/DynamicProgramming_动态规划/MaxSubarray_最大子段和/MultiFile_多文件实现/program",
             "args": [],
-            "cwd": "${workspaceFolder}/week01_max_subarray",
+            "cwd": "${workspaceFolder}/DynamicProgramming_动态规划/MaxSubarray_最大子段和/MultiFile_多文件实现",
             "externalConsole": false,
             "MIMode": "gdb",
             "preLaunchTask": "编译最大子数组"

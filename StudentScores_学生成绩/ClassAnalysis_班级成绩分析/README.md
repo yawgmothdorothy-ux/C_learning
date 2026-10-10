@@ -7,7 +7,7 @@
 ## 文件与编译运行
 
 ```text
-student_score_10_6/
+StudentScores_学生成绩/ClassAnalysis_班级成绩分析/
 ├── class_score.c     # main：输入、内存管理、班级统计、查询和输出
 ├── student_score.c   # calculate_total：计算一个学生的总分和平均分
 ├── student_score.h   # 结构体类型和函数声明
@@ -18,7 +18,7 @@ student_score_10_6/
 需要 GCC 或兼容的 C 编译器。在仓库根目录运行：
 
 ```bash
-cd student_score_10_6
+cd StudentScores_学生成绩/ClassAnalysis_班级成绩分析
 gcc -std=c11 -Wall -Wextra -Wpedantic -g class_score.c student_score.c -o program
 ./program
 ```

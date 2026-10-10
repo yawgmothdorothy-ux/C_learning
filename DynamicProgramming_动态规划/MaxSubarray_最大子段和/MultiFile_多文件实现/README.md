@@ -5,7 +5,7 @@
 ## 项目文件
 
 ```text
-week01_max_subarray/
+DynamicProgramming_动态规划/MaxSubarray_最大子段和/MultiFile_多文件实现/
 ├── main.c              # 输入、分配输入数组、调用算法、输出并释放数组
 ├── memory.h            # 动态数组分配函数的声明
 ├── memory.c            # 动态数组分配函数的实现
@@ -106,7 +106,7 @@ gcc -Wall -Wextra -g main.c memory.c Max_subarray.c -o program
 
 ```bash
 git status
-git add week01_max_subarray/README.md week01_max_subarray/main.c week01_max_subarray/Max_subarray.c week01_max_subarray/Max_subarray.h week01_max_subarray/memory.c week01_max_subarray/memory.h
+git add DynamicProgramming_动态规划/MaxSubarray_最大子段和/MultiFile_多文件实现/README.md DynamicProgramming_动态规划/MaxSubarray_最大子段和/MultiFile_多文件实现/main.c DynamicProgramming_动态规划/MaxSubarray_最大子段和/MultiFile_多文件实现/Max_subarray.c DynamicProgramming_动态规划/MaxSubarray_最大子段和/MultiFile_多文件实现/Max_subarray.h DynamicProgramming_动态规划/MaxSubarray_最大子段和/MultiFile_多文件实现/memory.c DynamicProgramming_动态规划/MaxSubarray_最大子段和/MultiFile_多文件实现/memory.h
 git diff --cached
 git commit -m "Update max subarray project"
 git push origin main
@@ -118,4 +118,4 @@ git push origin main
 
 ## 学习项目
 
-- [最大连续子数组和](week01_max_subarray/README.md)：练习动态数组、DP 和多文件编程。
+- [最大连续子数组和](README.md)：练习动态数组、DP 和多文件编程。
